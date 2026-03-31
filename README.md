@@ -49,7 +49,7 @@ Returns the current price and payment instructions.
   "price_per_page_usd": 0.001,
   "resource_id": "web-scraping-gateway-v1",
   "supported_formats": ["text", "html", "markdown"],
-  "pay_endpoint": "https://api.mainlayer.xyz/pay"
+  "pay_endpoint": "https://api.mainlayer.fr/pay"
 }
 ```
 
@@ -151,7 +151,7 @@ An AI agent that autonomously pays and scrapes in a single flow:
 import httpx
 
 GATEWAY = "http://localhost:8000"
-MAINLAYER = "https://api.mainlayer.xyz"
+MAINLAYER = "https://api.mainlayer.fr"
 AGENT_WALLET = "wallet_agent_abc123"
 TARGET_URL = "https://news.ycombinator.com"
 
@@ -235,5 +235,5 @@ uvicorn src.main:app --reload
 
 ## Support
 
-- Mainlayer: [https://mainlayer.xyz](https://mainlayer.xyz)
-- API docs: [https://api.mainlayer.xyz/docs](https://api.mainlayer.xyz/docs)
+- Mainlayer: [https://mainlayer.fr](https://mainlayer.fr)
+- API docs: [https://api.mainlayer.fr/docs](https://api.mainlayer.fr/docs)

@@ -17,7 +17,7 @@ from .models import OutputFormat, PageMetadata, ScrapeOptions, ScrapeResult
 logger = logging.getLogger(__name__)
 
 DEFAULT_USER_AGENT = (
-    "Mozilla/5.0 (compatible; Mainlayer-Scraper/1.0; +https://mainlayer.xyz)"
+    "Mozilla/5.0 (compatible; Mainlayer-Scraper/1.0; +https://mainlayer.fr)"
 )
 
 # Tags whose text content we discard when extracting clean text

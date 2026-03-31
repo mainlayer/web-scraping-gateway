@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 RESOURCE_ID: str = os.getenv("RESOURCE_ID", "web-scraping-gateway-v1")
 PRICE_USD: float = 0.001
-MAINLAYER_PAY_ENDPOINT: str = "https://api.mainlayer.xyz/pay"
+MAINLAYER_PAY_ENDPOINT: str = "https://api.mainlayer.fr/pay"
 
 _start_time = time.monotonic()
 
@@ -133,7 +133,7 @@ async def get_pricing() -> PricingResponse:
         supported_formats=["text", "html", "markdown"],
         description="Pay-per-page web scraping. No API key registration required.",
         pay_endpoint=MAINLAYER_PAY_ENDPOINT,
-        docs_url="https://api.mainlayer.xyz/docs",
+        docs_url="https://api.mainlayer.fr/docs",
     )
 
 

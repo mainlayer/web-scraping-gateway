@@ -13,7 +13,7 @@ services:
     environment:
       # Mainlayer
       MAINLAYER_API_KEY: "${MAINLAYER_API_KEY}"
-      MAINLAYER_BASE_URL: "${MAINLAYER_BASE_URL:-https://api.mainlayer.xyz}"
+      MAINLAYER_BASE_URL: "${MAINLAYER_BASE_URL:-https://api.mainlayer.fr}"
       MAINLAYER_TIMEOUT: "${MAINLAYER_TIMEOUT:-5}"
       RESOURCE_ID: "${RESOURCE_ID:-web-scraping-gateway-v1}"
       # Cache

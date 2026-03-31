@@ -67,7 +67,7 @@ class PaymentRequiredResponse(BaseModel):
     error: str = "payment_required"
     resource_id: str
     price_usd: float = 0.001
-    pay_endpoint: str = "https://api.mainlayer.xyz/pay"
+    pay_endpoint: str = "https://api.mainlayer.fr/pay"
     message: str = "This endpoint costs $0.001 per page. Pay via Mainlayer to proceed."
 
 
@@ -76,8 +76,8 @@ class PricingResponse(BaseModel):
     resource_id: str
     supported_formats: List[str] = Field(default_factory=lambda: ["text", "html", "markdown"])
     description: str = "Pay-per-page web scraping. No API key registration required."
-    pay_endpoint: str = "https://api.mainlayer.xyz/pay"
-    docs_url: str = "https://api.mainlayer.xyz/docs"
+    pay_endpoint: str = "https://api.mainlayer.fr/pay"
+    docs_url: str = "https://api.mainlayer.fr/docs"
 
 
 class HealthResponse(BaseModel):

@@ -128,7 +128,7 @@ class TestPricing:
 
     def test_pricing_pay_endpoint(self, client):
         data = client.get("/pricing").json()
-        assert data["pay_endpoint"] == "https://api.mainlayer.xyz/pay"
+        assert data["pay_endpoint"] == "https://api.mainlayer.fr/pay"
 
 
 # ---------------------------------------------------------------------------
@@ -148,7 +148,7 @@ class TestScrapePaymentEnforcement:
     def test_402_response_contains_pay_endpoint(self, client):
         resp = client.post("/scrape", json={"url": "https://example.com"})
         data = resp.json()
-        assert data["pay_endpoint"] == "https://api.mainlayer.xyz/pay"
+        assert data["pay_endpoint"] == "https://api.mainlayer.fr/pay"
 
     def test_402_response_error_field(self, client):
         resp = client.post("/scrape", json={"url": "https://example.com"})
